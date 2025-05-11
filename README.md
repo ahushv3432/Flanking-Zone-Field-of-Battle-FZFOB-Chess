@@ -39,6 +39,16 @@ FZFOB is played on a 10×10 board with a classical 8×8 center (Field of Battle)
 
 ---
 
+## 📚 Rules Reference
+
+For a full breakdown of gameplay, board setup, notation, and special mechanics, see the [📖 Rules Directory](rules/README.md).
+
+- 🗺️ [Board Layout & Notation](rules/board-notation/README.md)
+- ♞ [Knight Movement & Flanking Zone Mechanics](rules/knight-flank/README.md) *(Coming Soon)*
+- 🧩 [FEN/PGN Specification](rules/notation-spec/README.md) *(TBD)*
+
+---
+
 ## 🧠 Strategic Features
 
 - **Flank-first options:** Knights can open games by jumping into the Flanking Zone, creating new threats or positioning.
