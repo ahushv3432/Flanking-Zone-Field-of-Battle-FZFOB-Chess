@@ -93,7 +93,7 @@ To be defined. PGN may extend square naming conventions and FEN may require a 10
    θ a b c d e f g h χ
 ```
 
-> *FOB squares use traditional dark/light coloring; Flanking Zone squares are styled with contrasting visuals such as tinted backgrounds or bolded outlines.*
+*In rendered interfaces, FOB squares follow the standard chessboard color scheme. Flanking Zone squares should be visually distinct—e.g., via alternate color tinting, thicker borders, or other visual cues such as the `*` in the unicode example above.*
 
 ---
 
