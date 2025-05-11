@@ -8,10 +8,34 @@
 
 - The game is played on a **10×10 board**.
 - The inner **8×8 grid** (a1–h8) is the **Field of Battle (FOB)**, where all traditional rules apply.
-- The surrounding ring (files `α` and `ω`, and ranks `0` and `9`) is the **Flanking Zone**, accessible **only by knights**.
+- The surrounding ring (files `θ` and `χ`, and ranks `0` and `9`) is the **Flanking Zone**, accessible **only by knights**.
 - All **non-knight pieces** must remain inside the FOB at all times.
 - Opening theory expands: **26 legal opening moves**, up from 20 in classical chess.
 - **Notation extension** uses Greek letters and zero-based ranks for clarity and engine friendliness.
+
+---
+
+## 🧭 Board Layout (Start Position)
+
+FZFOB is played on a 10×10 board with a classical 8×8 center (Field of Battle) and a surrounding Flanking Zone. The flank columns are labeled `θ` and `χ` in tribute to the variant’s roots.
+
+```CSS
+   θ a b c d e f g h χ 
+9  * * * * * * * * * *
+8  * r n b q k b n r *
+7  * p p p p p p p p *
+6  * . . . . . . . . *
+5  * . . . . . . . . *
+4  * . . . . . . . . *
+3  * . . . . . . . . *
+2  * P P P P P P P P *
+1  * R N B Q K B N R *
+0  * * * * * * * * * *
+```
+
+- Pieces follow standard algebraic positions inside the central 8×8 Field of Battle (a1–h8).
+- The outermost rank and file (0, 9, θ, χ) form the Flanking Zone.
+- Knights can move into and out of the Flank. All other pieces must remain entirely within the central field.
 
 ---
 
