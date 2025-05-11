@@ -19,15 +19,15 @@ This document outlines the core rules of **Flanking Zone Field of Battle (FZFOB)
 
 - **Knights**: Can move freely between the FOB and Flanking Zone using standard L-shaped moves.
 - **Other Pieces**: Must remain within the FOB at all times.
-- **Pawns**: Cannot move into the Flanking Zone; promotions occur within the FOB.
+- **Pawns**: Cannot move into the Flanking Zone (unless they promote to a knight?!); promotions occur within the FOB.
 
 ---
 
 ## 🏁 Game Rules
 
-- **Check, Checkmate, and Stalemate**: Follow classical rules within the FOB.
+- **Check, Checkmate, and Stalemate**: Follow classical rules within the FOB. (Any adjacent Flanking Zone squares need not be controlled, as the king cannot leave the FOB.)
 - **Castling**: Permitted only within the FOB; king and rook cannot pass through or land on Flanking Zone squares.
-- **Draw Conditions**: Same as classical chess, including the 50-move rule and threefold repetition.
+- **Draw Conditions**: Same as classical chess, including the 50-move rule and threefold repetition. (To Be Researched: Certain rare knight configurations may achieve forced mate in FZFOB due to restricted king movement.)
 
 For detailed explanations of standard chess rules, refer to:
 - [Chess.com: How to Play Chess](https://www.chess.com/learn-how-to-play-chess)
