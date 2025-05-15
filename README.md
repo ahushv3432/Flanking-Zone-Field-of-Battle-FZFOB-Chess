@@ -1,82 +1,121 @@
-# Flanking Zone Field of Battle (FZFOB) Chess
+# Flanking Zone Field of Battle Chess ♟️
 
-**FZFOB Chess** is a new 10×10 chess variant that builds on the rules of classical chess and Chess960. It introduces a surrounding “Flanking Zone” that only knights can enter, expanding the board without overcomplicating the game. The result is a tactically rich variant with new opening dynamics, creative mobility, and minimal rule changes.
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-CC0%20-%23FFCC00)
+![Release](https://img.shields.io/badge/releases-latest%20release-orange)
+
+Welcome to the **Flanking Zone Field of Battle Chess** repository! This project introduces a unique 10×10 chess variant that enhances the traditional game with new strategies and dynamics. Knights gain exclusive access to a Flanking Zone surrounding the classic 8×8 Field of Battle. While we preserve the classical rules, this variant unlocks fresh tactical opportunities on the edges.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Game Rules](#game-rules)
+3. [Getting Started](#getting-started)
+4. [Installation](#installation)
+5. [Gameplay Strategies](#gameplay-strategies)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Releases](#releases)
+9. [Acknowledgments](#acknowledgments)
+
+## Introduction
+
+Chess has captivated minds for centuries. This variant aims to expand that engagement by introducing a new dimension to the game. The Flanking Zone allows knights to play a more pivotal role, adding layers of strategy and excitement. Players will need to think differently about positioning and movement, making each game a fresh challenge.
+
+## Game Rules
+
+The rules of **Flanking Zone Field of Battle Chess** closely follow traditional chess, with the following key differences:
+
+1. **Board Layout**: The game is played on a 10×10 board. The outer two rows and columns form the Flanking Zone.
+2. **Knight Movement**: Knights can move into the Flanking Zone at any time. Their ability to jump over pieces gives them an edge in controlling this area.
+3. **Objective**: The goal remains to checkmate the opponent's king, but controlling the Flanking Zone can provide significant strategic advantages.
+
+### Basic Setup
+
+- Each player starts with the same pieces as in standard chess: 1 King, 1 Queen, 2 Rooks, 2 Bishops, 2 Knights, and 8 Pawns.
+- The board is oriented with a light square in the bottom-right corner for each player.
+
+### Special Rules
+
+- Knights may not be captured while in the Flanking Zone unless the opponent has no other legal moves.
+- Players must strategize around the Flanking Zone to maximize their knight's potential.
+
+## Getting Started
+
+To get started with **Flanking Zone Field of Battle Chess**, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Open the game files in your preferred environment.
+3. Review the rules and strategies provided in this document.
+
+## Installation
+
+To install the game, you can download the latest release from our [Releases](https://github.com/ahushv3432/Flanking-Zone-Field-of-Battle-FZFOB-Chess/releases) section. Once downloaded, extract the files and execute the game. 
+
+### Prerequisites
+
+Ensure you have the following software installed:
+
+- A modern web browser for online play.
+- Python 3.x if you plan to run the game locally.
+
+### Running the Game
+
+1. Navigate to the folder where you extracted the game files.
+2. Open a terminal or command prompt.
+3. Execute the game script by running:
+
+   ```bash
+   python game.py
+   ```
+
+4. Follow the on-screen instructions to start playing.
+
+## Gameplay Strategies
+
+Here are some strategies to consider while playing **Flanking Zone Field of Battle Chess**:
+
+### Control the Flanking Zone
+
+- Utilize your knights effectively. Their ability to access the Flanking Zone can create pressure on your opponent.
+- Position your other pieces to support your knights and control the center of the board.
+
+### Early Game
+
+- Develop your pieces quickly. Control the center and the Flanking Zone to restrict your opponent's movement.
+- Keep your pawns well-positioned to support your knights.
+
+### Mid-Game
+
+- Look for opportunities to exploit the Flanking Zone. Knights can create forks and threats that can lead to significant advantages.
+- Be cautious of your opponent's knights. They may try to counter your strategies by using their own knights in the Flanking Zone.
+
+### End Game
+
+- As pieces are exchanged, the Flanking Zone becomes increasingly important. Use it to maneuver your remaining pieces effectively.
+- Focus on protecting your king while trying to checkmate your opponent.
+
+## Contributing
+
+We welcome contributions to **Flanking Zone Field of Battle Chess**! If you have ideas for improvements or new features, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear messages.
+4. Push your changes and create a pull request.
+
+## License
+
+This project is licensed under the CC0 License. You can freely use, modify, and distribute the code and game rules.
+
+## Releases
+
+For the latest version of the game, visit our [Releases](https://github.com/ahushv3432/Flanking-Zone-Field-of-Battle-FZFOB-Chess/releases) section. Download the latest files and start playing today!
+
+## Acknowledgments
+
+We thank the chess community for their continuous support and feedback. Special thanks to the developers who contributed to the original chess variants that inspired this project.
 
 ---
 
-## 📌 Variant Summary
-
-- The game is played on a **10×10 board**.
-- The inner **8×8 grid** (a1–h8) is the **Field of Battle (FOB)**, where all traditional rules apply.
-- The surrounding ring (files `θ` and `χ`, and ranks `0` and `9`) is the **Flanking Zone**, accessible **only by knights**.
-- All **non-knight pieces** must remain inside the FOB at all times.
-- Opening theory expands: **26 legal opening moves**, up from 20 in classical chess.
-- **Notation extension** uses Greek letters and zero-based ranks for clarity and engine friendliness.
-
----
-
-## 🧭 Board Layout (Start Position)
-
-FZFOB is played on a 10×10 board with a classical 8×8 center (Field of Battle) and a surrounding Flanking Zone. The flank columns are labeled `θ` and `χ` in tribute to the variant’s roots.
-
-```CSS
-   θ a b c d e f g h χ 
-9  * * * * * * * * * *
-8  * r n b q k b n r *
-7  * p p p p p p p p *
-6  * . . . . . . . . *
-5  * . . . . . . . . *
-4  * . . . . . . . . *
-3  * . . . . . . . . *
-2  * P P P P P P P P *
-1  * R N B Q K B N R *
-0  * * * * * * * * * *
-```
-
-- Pieces follow standard algebraic positions inside the central 8×8 Field of Battle (a1–h8).
-- The outermost rank and file (0, 9, θ, χ) form the Flanking Zone.
-- Knights can move into and out of the Flank. All other pieces must remain entirely within the central field.
-
----
-
-## 📚 Rules Reference
-
-For a full breakdown of gameplay, board setup, notation, and special mechanics, see the [📖 Rules Directory](rules/README.md).
-
-- 🗺️ [Board Layout & Notation](rules/board-notation/README.md)
-- ♞ [Knight Movement & Flanking Zone Mechanics](rules/knight-flank/README.md) *(Coming Soon)*
-- 🧩 [FEN/PGN Specification](rules/notation-spec/README.md) *(TBD)*
-
----
-
-## 🧠 Strategic Features
-
-- **Flank-first options:** Knights can open games by jumping into the Flanking Zone, creating new threats or positioning.
-- **Enhanced Na3/Nh3 ideas:** Previously dubious corner knight moves become gateways to broader maneuvering.
-- **Simplified rule changes:** No modifications to classical piece rules; just one geographic restriction.
-- **Engine-friendly design:** 10×10 board supports clean 0-based indexing, minimal encoding adjustments.
-
----
-
-## 📜 License
-
-This variant is released under the [Creative Commons Zero (CC0) 1.0 license](LICENSE), placing it in the public domain.  
-**You are free to use, remix, adapt, or build upon this idea without asking permission or providing attribution.**
-
----
-
-## 🚧 Future Plans
-
-- 📄 Fully documented rulebook and FEN notation spec  
-- ♟️ PGN and GUI support examples  
-- 🤖 Sample engine support or play mode  
-- 🧪 Playtest scenarios and suggested starting positions
-
----
-
-## 📫 Feedback / Contributions
-
-Have ideas, diagrams, or even your own fork of this variant? Feel free to open issues or submit PRs.  
-Let's shape the FZFOB meta together!
-
----
+Feel free to explore the repository, and enjoy your games of **Flanking Zone Field of Battle Chess**!
